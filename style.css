@@ -1,0 +1,8 @@
+.cell {
+    width: 30%;
+    height: 40%;
+    margin: 8px;
+    float: left;
+    padding: 3px;
+    background-color: #BBBBBB;
+}
