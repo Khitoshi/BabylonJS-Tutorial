@@ -43,7 +43,7 @@ func main() {
 	}
 
 	e.GET("/", pageHandles.Index_Get)
-	e.GET("/item", pageHandles.Item_Get)
+	e.GET("/item/:id", pageHandles.Item_Get)
 
 	e.Logger.Fatal(e.Start(":8080"))
 }

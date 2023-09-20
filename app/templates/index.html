@@ -12,6 +12,8 @@
     <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
 
     <link rel="stylesheet" href="style/style.css" />
+    <script src="script/babylon.js"></script>
+    <script src="script/index.js"></script>
 </head>
 
 <body>
@@ -20,16 +22,24 @@
         Viewer News
     </div>
 
-    <!--<div class="cell">
+    <div class="cell">
         <canvas id="renderCanvas"></canvas>
-    </div>-->
+    </div>
 
     {{ range . }}
-    <a href={{.Item_id}}>
+    <!--
+        <a href={{.Item_id}}>
+            <div class="cell">
+                <img id="item" src={{.Img_url}} alt={{.Description}} title={{.Title}} />
+            </div>
+        </a>
+    -->
+    <a href="javascript:void(0);" onclick="navigateToItemPage('{{.Item_id}}');">
         <div class="cell">
-            <img src={{.Img_url}} alt={{.Description}} title={{.Title}} />
+            <img id="item" src={{.Img_url}} alt={{.Description}} title={{.Title}} />
         </div>
     </a>
+
     {{ end }}
 </body>
 

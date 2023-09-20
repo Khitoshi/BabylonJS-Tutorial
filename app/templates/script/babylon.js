@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
         const light = new BABYLON.HemisphericLight("light", camera.position);
 
-        BABYLON.SceneLoader.ImportMeshAsync("", ".asset/model/", "test.obj").then((result) => {
+        BABYLON.SceneLoader.ImportMeshAsync("", "asset/model/", "test.obj").then((result) => {
             result.meshes[0].position.y = 1;
 
             const material = new BABYLON.StandardMaterial("testmat", scene);

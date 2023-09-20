@@ -1,5 +1,5 @@
+
 $(document).ready(function () {
-    // 画像をクリックしたらポップアップを表示
     $('#product-img').click(function () {
         $('#popup-img').attr('src', $(this).attr('src'));
         $('#image-popup').fadeIn();
@@ -15,4 +15,3 @@ $(document).ready(function () {
         event.stopPropagation();
     });
 });
-
