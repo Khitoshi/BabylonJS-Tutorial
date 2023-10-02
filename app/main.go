@@ -44,6 +44,7 @@ func main() {
 
 	e.GET("/", pageHandles.Index_Get)
 	e.GET("/item/:id", pageHandles.Item_Get)
+	e.GET("/model", pageHandles.Model_Get)
 
 	e.Logger.Fatal(e.Start(":8080"))
 }

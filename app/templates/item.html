@@ -5,11 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Product Page</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="/style/item.css">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <link rel="stylesheet" href="/style/item.css">
     <script src="/script/item.js"></script>
-    <script src="/script/babylon.js"></script>
 
 </head>
 
@@ -24,11 +25,12 @@
         </div>
     </div>
 
-    <!-- ポップアップ用のdiv -->
     <div id="image-popup" class="popup">
         <span class="close" id="close-popup">&times;</span>
         <img class="popup-content" id="popup-img">
+        <canvas class="popup-content" id="popup-img"></canvas>
     </div>
+
 </body>
 
 </html>
